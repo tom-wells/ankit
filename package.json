@@ -1,0 +1,29 @@
+{
+  "name": "ankit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-wells/ankit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-wells/ankit/issues"
+  },
+  "homepage": "https://github.com/tom-wells/ankit#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gh-pages": "^2.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.12.0"
+  }
+}
