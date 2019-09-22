@@ -95,7 +95,7 @@ nav {
     
     }
     img {
-        max-width:900px;
+        max-width:100%;
 
     }
 
@@ -211,12 +211,12 @@ nav {
         display:flex;
         flex-direction:column;
         padding:100px;
-        width:400px;
+        max-width:300px;
         text-decoration:none;
 
         input {
             color:$dark-type;
-            width:300px;
+            max-width:300px;
             margin-bottom:$line-global/2;
             padding: $line-global/4 $line-global/4 $line-global/4 $line-global/4;
             font-size:$body-size;
@@ -227,7 +227,7 @@ nav {
         
         textarea {
             color:$dark-type;
-            width:300px;
+            max-width:300px;
             height:200px;
             padding: $line-global/4 $line-global/4 $line-global/4 $line-global/4;
             font-size:$body-size;
@@ -239,7 +239,7 @@ nav {
             
         }
         .submit {
-            width:310px;
+            width:100%;
             height:$line-global*2;
             margin-top:$line-global/2;
             border:solid 2px $pink-background;
@@ -304,10 +304,12 @@ footer {
     }
 
     .about{
+        height:100%;
+
         display:flex;
         flex-direction: column-reverse;
         .about-image {
-            padding:$line-global*2 0 0 0;
+            padding:$line-global*2 0 $line-global*2 0;
             width:100%;
             margin-left:auto;
             margin-right:auto;
@@ -331,12 +333,13 @@ footer {
             flex-direction:column;
             height:100%;
             div {
-                width:50%;
+                width:100%;
                 height:50%;
-                margin:50px 50px 50px 50px;    
+                margin:50px 0px 50px 0px;    
                
             }
             .map {
+                width:50%;
                 height:200px;
             }      
         }
@@ -376,7 +379,6 @@ footer {
                 .submit {
                     margin-left: auto;
                     margin-right: auto;
-                    width:315px;
                 }
             }
 
@@ -401,3 +403,11 @@ footer {
 
     }
 
+
+    // older mobile 
+
+    @media (max-width:320px) {
+        .location {
+            
+        }
+    }
