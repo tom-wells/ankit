@@ -74,6 +74,9 @@ header {
         display:none;
     }
 
+.mobile-header {
+    display:none;
+}
 
 nav {
     width:900px;
@@ -606,7 +609,7 @@ width: 100%;
 
     .hero,
     .collection {
-        padding-top:100px;
+        padding-top:120px;
         padding-bottom:0;
     }
 
