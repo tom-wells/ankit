@@ -580,7 +580,7 @@ section {
         position:fixed;
         text-align:center;
         padding-top:0;
-        z-index:2;
+        z-index:4;
         padding-bottom:$line-global/2;
         
         a {
@@ -612,7 +612,7 @@ width: 100%;
 
     .about{
         height:100%;
-
+        padding-top:$line-global*6;
         display:flex;
         flex-direction: column-reverse;
         .about-image {
@@ -639,6 +639,8 @@ width: 100%;
         .location {
             flex-direction:column;
             height:100%;
+            padding-top:$line-global*6;
+
             div {
                 width:100%;
                 height:50%;
@@ -665,6 +667,7 @@ width: 100%;
         .contact {
             height:100%;
             flex-direction:column;
+            padding-top:$line-global*5;
             .image-contact {
                 margin:50px;
                 div {
