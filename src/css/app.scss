@@ -475,23 +475,38 @@ section {
             flex-direction:column-reverse;
             max-width:100%;
             padding:0;
+           h2 {
+                width:60%;
+                display:block;
+                font-size:$sub-header-size;
+            }
             .collection-nav {
                 width:100%;
-                padding:$line-global/2;
-            }
-            h2 {
-                width:100%;
-                display:block;
-                font-size:$sub-header-size/1.5;
-            }
+                padding:0;
+             
+               
+            
+        
             div {
+
+                padding:$line-global/2;
+                p {
+                    margin-right:0;
+                    
+                }
                 .main {
                     top:0;
-                    padding:$line-global/1.25 $line-global/2;
-    
-                            }
+                    padding:$line-global*1.75 $line-global;
+                    }
+                }
+                @media (max-width:320px) {
+                    .main {
+                        padding: $line-global/2 $line-global;
+                    }
+                }
             }
         }
+
 
         .container {
             width:100%;
