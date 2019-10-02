@@ -478,7 +478,16 @@ section {
            h2 {
                 width:60%;
                 display:block;
-                font-size:$sub-header-size;
+                padding-top:$line-global/2;
+                padding-bottom:0;
+                font-size:$sub-header-size/1.5;
+    
+            }
+            div {
+                .main {
+                    top:0;
+                    padding: 10px 10px 0 0;
+                    }
             }
             .collection-nav {
                 width:100%;
@@ -488,21 +497,21 @@ section {
             
         
             div {
-
+              
+                
                 padding:$line-global/2;
                 p {
+                    margin-bottom:10px;
                     margin-right:0;
+                    display:block;
                     
                 }
-                .main {
-                    top:0;
-                    padding:$line-global*1.75 $line-global;
-                    }
+
+                a {
+                    margin-left:0;
+                    margin-right:$line-global/2;
                 }
-                @media (max-width:320px) {
-                    .main {
-                        padding: $line-global/2 $line-global;
-                    }
+                
                 }
             }
         }
