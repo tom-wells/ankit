@@ -201,7 +201,7 @@ nav {
     justify-content: center;
     align-items: center;
     .image-contact {
-       padding:100px;
+       padding:50px;
         div {
             width:400px;
             height:600px;
@@ -229,7 +229,7 @@ nav {
     form {
         display:flex;
         flex-direction:column;
-        padding:100px;
+        padding:50px;
         max-width:300px;
         text-decoration:none;
 
@@ -557,7 +557,7 @@ section {
 
 
     header {
-        nav {
+        display:none;        nav {
             justify-content: center;
             img {
                 width:125px;
@@ -579,19 +579,29 @@ section {
         margin-right:auto;
         position:fixed;
         text-align:center;
-        padding-top:$line-global;
+        padding-top:0;
         z-index:2;
-        padding-bottom:$line-global;
+        padding-bottom:$line-global/2;
         
         a {
             text-decoration:none;
             color:$black;
-            margin-left:10px;
-            margin-right:10px;
+            margin-left:5px;
+            margin-right:5px;
             text-transform:uppercase;
             font-family: $body-font;
             font-size:12px;
         }
+        div {
+            display: block;
+text-align: center;
+width: 100%;
+
+  
+        img {
+            width:125px;
+        }
+    }
     }
 
     .hero,
@@ -642,10 +652,12 @@ section {
         }
 
         .collections {
-            padding-left:$line-global;
-            padding-right:$line-global;
+            
             h1 {
                 font-size:$sub-header-size;
+            }
+            img {
+                max-width:90%;
             }
 
         }
