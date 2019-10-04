@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Meddon&display=swap');
 
 $black: #000000;
 $white:#ffffff;
@@ -10,7 +12,8 @@ $dark-type: #774646;
 
 
 $body-font: "Work Sans", san-serif;
-
+$header-font:'Cormorant Garamond', serif;
+$hand-font: 'Meddon', cursive;
 
 $line-height-header: 1.4;
 $line-height-body: 1.6;
@@ -42,10 +45,20 @@ body {
 
 h1 {
     font-size:$header-size;
+    font-family:$header-font;
+    text-transform: uppercase;
 }
 h2 {
     font-size:$sub-header-size;
+    text-transform: uppercase;
+    font-family:$header-font;
+
     
+}
+
+h3 {
+    font-family:$header-font;
+    text-transform: uppercase;
 }
 
 p{
@@ -154,6 +167,10 @@ nav {
         justify-content: center;
         padding:100px 125px 100px 80px;
         color:$dark-type;
+        h2 {
+            font-family:$hand-font;
+            text-transform: none;
+        }
         p {
             padding-bottom:$line-global;
             font-size:$body-size;
@@ -185,7 +202,7 @@ nav {
                 }
     }
     .opening-times {
-        margin-bottom:$line-global*4+10;
+        margin-bottom:$line-global*5;
     }
 
  
@@ -216,6 +233,8 @@ nav {
             h2 {
                 text-align: center;
                 width:300px;
+                font-family:$hand-font;
+                text-transform:none;
                 margin:0;
                 line-height:$line-height-header;
             }
