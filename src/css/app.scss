@@ -23,18 +23,19 @@ $sub-header-size:36px;
 $body-size:18px;
 
 // collection page colors
+$hc-1: #e95943;
+$hc-2:rgb(161, 93, 93);
+$hc-3: rgb(113, 135, 163);
+$hc-4: #fdc197;
+$hc-5:#ffc2c2;
+$hc-6: #a3152a;
 
-$hc-1:rgb(161, 93, 93);
-$hc-2: rgb(113, 135, 163);
-$hc-3: #fdc197;
-$hc-4:#ffc2c2;
-$hc-5: #a3152a;
-
-$bg-1: #BB7373;
-$bg-2: #FFFFFF;
-$bg-3: #fff1da;
-$bg-4: #ffe0e7;
-$bg-5: #dcdcdc;
+$bg-1: #ffbd9c;
+$bg-2: #BB7373;
+$bg-3: #FFFFFF;
+$bg-4: #fff1da;
+$bg-5: #ffe0e7;
+$bg-6: #dcdcdc;
 
 
 body {
@@ -331,10 +332,10 @@ align-items: center;
 }
 
 /// Collection Page
-
 .collection-header.s2 {
     background-color:$hc-2;
 }
+
 .collection-header.s3 {
     background-color:$hc-3;
 }
@@ -343,6 +344,9 @@ align-items: center;
 }
 .collection-header.s5 {
     background-color:$hc-5;
+}
+.collection-header.s6 {
+    background-color:$hc-6;
 }
 
 .collection-header {
@@ -375,9 +379,10 @@ align-items: center;
         display:flex;
         width:33.33%;
         justify-content: flex-start;
-        padding:$line-global 0 $line-global $line-global;
         div {
             width:100%;
+            padding:$line-global 0 $line-global $line-global;
+
         p {
             text-transform: uppercase;
             color:$white;

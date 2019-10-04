@@ -2,11 +2,14 @@ const pixelsTag = document.querySelector("div.pixels")
 const sections = document.querySelectorAll("section")
 const titleTag = document.querySelector(".collection-header h2")
 const headerTag = document.querySelector(".collection-header")
+const collectionTag = document.querySelector(".collection-nav p")
 const nav1 = document.querySelector(".p1")
 const nav2 = document.querySelector(".p2")
 const nav3 = document.querySelector(".p3")
 const nav4 = document.querySelector(".p4")
 const nav5 = document.querySelector(".p5")
+const nav6 = document.querySelector(".p6")
+
 
 document.addEventListener("scroll", function() {
     const pixels = window.pageYOffset
@@ -18,6 +21,7 @@ document.addEventListener("scroll", function() {
             titleTag.innerHTML = section.getAttribute("data-client")
 
             if(section.hasAttribute("data-s1")) {
+
                 nav1.classList.add("selected")
             } else {
                 nav1.classList.remove("selected")
@@ -58,6 +62,16 @@ document.addEventListener("scroll", function() {
 } else {
 headerTag.classList.remove("s5")
 nav5.classList.remove("selected")
+
+}
+
+if(section.hasAttribute("data-s6")) {
+    headerTag.classList.add("s6")
+    nav6.classList.add("selected")
+
+} else {
+headerTag.classList.remove("s6")
+nav6.classList.remove("selected")
 
 }
         }
