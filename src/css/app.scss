@@ -55,6 +55,10 @@ p{
 }
 
 
+.mobile-header div {
+    display:none;
+}
+
 header {
     width:100%;
     position: fixed;
@@ -70,13 +74,7 @@ header {
         transform:translateY(-100%);
     }
 
-    .mobile-header {
-        display:none;
-    }
 
-.mobile-header {
-    display:none;
-}
 
 nav {
     width:900px;
