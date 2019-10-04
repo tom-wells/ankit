@@ -368,14 +368,14 @@ align-items: center;
         display:flex;
         padding:$line-global/2+2;
         justify-content: center;
-        font-size: $sub-header-size;
+        font-size:24px;
 
     }
     .collection-nav {
         display:flex;
         width:33.33%;
         justify-content: flex-start;
-        padding:$line-global;
+        padding:$line-global 0 $line-global $line-global;
         div {
             width:100%;
         p {
@@ -409,7 +409,7 @@ align-items: center;
             position: absolute;
             right:0;
             color:$white;
-            padding:$line-global $line-global*2 $line-global $line-global;
+            padding:$line-global $line-global $line-global $line-global;
             font-family:$body-font;
             text-decoration:none;
 
@@ -693,6 +693,9 @@ width: 100%;
                 div {
                     width:315px;
                     height:450px;
+                    h2 {
+                        font-size:24px;
+                    }
                 }
                 width:315px;
                 padding:0;
