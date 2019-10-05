@@ -108,6 +108,10 @@ nav {
 }
 }
 
+.mobile-hero {
+    display:none;
+}
+
 .hero,
 .collections {
     padding-top:180px;
@@ -267,7 +271,7 @@ nav {
         
         textarea {
             color:$dark-type;
-            max-width:300px;
+            width:300px;
             height:200px;
             padding: $line-global/4 $line-global/4 $line-global/4 $line-global/4;
             font-size:$body-size;
@@ -520,6 +524,14 @@ section.bg-6 {
 section {
     height:100%;
 }
+
+.mobile-hero {
+    display:flex;
+    img {
+        width:100%;
+    }
+
+}
         .collection-header {
             display:flex;
             flex-direction:column-reverse;
@@ -654,7 +666,9 @@ width: 100%;
     }
     }
 
-    .hero,
+    .hero {
+        display:none;
+    }
     .collection {
         padding-top:120px;
         padding-bottom:0;
