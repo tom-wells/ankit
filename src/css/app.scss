@@ -265,8 +265,7 @@ nav {
             padding: $line-global/4 $line-global/4 $line-global/4 $line-global/4;
             font-size:$body-size;
             border:solid 2px $pink-background;
-
-            
+          
         }
         
         textarea {
@@ -284,6 +283,7 @@ nav {
         }
         .submit {
             width:315px;
+
             height:$line-global*2;
             margin-top:$line-global/2;
             border:solid 2px $pink-background;
@@ -293,6 +293,8 @@ nav {
             font-size:$body-size;
             background-color:$pink-background;
         }
+        
+      
 }
 
 }
