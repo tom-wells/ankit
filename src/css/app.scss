@@ -255,12 +255,12 @@ nav {
         display:flex;
         flex-direction:column;
         padding:50px;
-        max-width:300px;
+        width:300px;
         text-decoration:none;
 
         input {
             color:$dark-type;
-            max-width:300px;
+            width:300px;
             margin-bottom:$line-global/2;
             padding: $line-global/4 $line-global/4 $line-global/4 $line-global/4;
             font-size:$body-size;
@@ -283,7 +283,7 @@ nav {
             
         }
         .submit {
-            width:100%;
+            width:315px;
             height:$line-global*2;
             margin-top:$line-global/2;
             border:solid 2px $pink-background;
