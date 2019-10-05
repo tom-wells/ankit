@@ -69,7 +69,7 @@ p{
 }
 
 
-.mobile-header div {
+.mobile-header {
     display:none;
 }
 
@@ -782,6 +782,9 @@ width: 100%;
                 font-size:14px;
                 padding-left:$line-global;
                 
+            }
+            a {
+                padding-left:$line-global;
             }
         }
             .sm-links {
