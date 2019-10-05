@@ -436,6 +436,10 @@ section {
 section.bg-1 {
     background-color:$bg-1;
 
+    path {
+        fill:$hc-1;
+    }
+
 }
 
 section.bg-2 {
@@ -444,14 +448,35 @@ section.bg-2 {
 
 section.bg-3 {
     background-color:$bg-3;
+
+    path {
+        fill:$hc-3;
+    }
+
 }
 
 section.bg-4 {
     background-color:$bg-4;
+
+    path {
+        fill:$hc-4;
+    }
 }
 
 section.bg-5 {
     background-color:$bg-5;
+
+    path {
+        fill:$hc-5;
+    }
+}
+
+section.bg-6 {
+    background-color:$bg-6;
+
+    path {
+        fill:$hc-6;
+    }
 }
 
     .container {
@@ -559,16 +584,16 @@ section {
             }
 
             .flower-1 {
-                top:180px;
-                left:20px;
+                top:120px;
+                left:25px;
                 img {
                     width:80px;
                     
                 }
             }
             .flower-2 {
-                bottom:180px;
-                right:20px;
+                bottom:20px;
+                right:25px;
                 img {
                     width:80px;
                     
