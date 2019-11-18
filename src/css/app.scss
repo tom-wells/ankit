@@ -262,11 +262,14 @@ nav {
             color:$dark-type;
             text-align:center;
             font-size:$body-size;
-            margin-bottom:$line-global*2;
-       
+           img {
+               margin-top:$line-global/2;
+           }
             p {
-                line-height:$line-height-body*2;            }
-        }
+                margin:$line-global/2 $line-global/2 $line-global/2 $line-global/2;
+        }       
+      
+    }
         display:flex;
         flex-direction:column;
         padding:50px;
