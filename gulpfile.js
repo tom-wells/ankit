@@ -19,7 +19,7 @@ sass.compiler = require('node-sass')
 
 
 gulp.task("sass", function (){
-    return gulp.src("src/css/app.scss")
+    return gulp.src("src/css/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(
@@ -31,6 +31,8 @@ gulp.task("sass", function (){
     .pipe(gulp.dest("dist"))
     .pipe(browserSync.stream())
 })
+
+
 
 
 gulp.task("html",function () {
