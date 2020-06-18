@@ -100,6 +100,7 @@ nav {
         font-size:$header-size;
     }
     .icons {
+        display:flex;
         position: absolute;
         bottom:$line-global*2;
         margin-top:$line-global*2;
@@ -502,6 +503,10 @@ padding:$line-global*4 0;
 
 
         .container {
+
+            .about-text {
+                margin-top:$line-global*5;
+            }
             .about-text div {
                 width: 400px;
     padding-left: 10px;
@@ -634,45 +639,24 @@ padding:$line-global*4 0;
 
 
         // menu
+        
         nav {
-            width:100vw;
-            
-            display:flex;
-            justify-content: center;
-            align-items:center;
-            flex-direction: column;
-            height:100vh;
-                a {
-                display:block;
-                margin-bottom:15px;
-                font-family:$header-font;
-                font-style:italic;
-                font-size:14vw;
+
+            padding-top:$line-global*2;
+            a {
+                font-size:13vw;
             }
             .icons {
                 position:relative;
-                bottom:$line-global*2;
-                margin-top:$line-global*3;
-                img {
-                    margin-left:$line-global/2;
-                    height:$line-global*2;
-                    cursor:pointer;
-                }
+                bottom:0;
+                margin-top:$line-global*2;
             }
             .build-credit {
-                position: absolute;
-                text-align: center;
-                bottom: 40px;
-                width: 100%;
-                left: 0;
-                a {
-                    font-family:$body-font;
-                    font-size:5vw;
-                    font-style:normal;
-                }
-        
+                position:relative;
+                text-align:center;
+                bottom:0;
+                left:0;
             }
         }
-        
 
     }
