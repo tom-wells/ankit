@@ -52,10 +52,10 @@ header {
 }
 .logo {
     width:180px;
+    height:auto;
     z-index:1;
     img {
         width:100%;
-        height:100%;
     }
 }
 
@@ -533,10 +533,9 @@ padding:$line-global*4 0;
 
         .logo {
             width:120px;
+            height:auto;
             img {
-                width:100%;
-                height:100%
-            }
+                width:100%;            }
         }
      
        
