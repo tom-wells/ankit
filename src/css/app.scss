@@ -365,6 +365,14 @@ padding:$line-global*4 0;
     }
 }
 
+// visit us page 
+
+.visit-heading {
+        top:$line-global;
+        left:$line-global*2;
+        position: absolute;
+    }
+
 
 
 
@@ -418,11 +426,11 @@ padding:$line-global*4 0;
         flex-direction:column;
         .look-text {
             padding-top:0;
+
         }
         .visit-text,
         .look-text {
             width:100vw;
-            height:300px;
             h1 {
                 font-size:54px;
                 text-align: center;
