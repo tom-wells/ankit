@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Work+Sans:wght@400;800&display=swap');
+
+
+$body-font: 'Work Sans', san-serif;
+$header-font:'Cormorant Garamond', serif;
+
+$line-height-header: 1.4;
+$line-height-body: 1.6;
+
+$header-size:72px;
+$sub-header-size:64px;
+$body-size:18px;
+
+$black: #000000;
+$white:#ffffff;
+$line-global:20px;
+
+$background-1: #FDE9CE;
+$background-2: #F2E9EB;
+$background-3: #F8EEE7;
+$background-4: #F4E3E7;
+$background-5: #D0D3E9;
+$background-6: #D1DEE0;
+$background-7: #F2E9EB;
+$background-8: #C0CDED;
+$background-9: #C4E0F4;
+$background-10: #F5F9FD;
+
+
+
+
+.holder {
+    background-color:$background-1;
+    transition: background ease 1s;
+    width:100vw;
+    height:100vh;
+    .look-menu {
+        color:$black;
+       
+    }
+    .white {
+        color:$white;
+    }
+        .look-nav {
+            position:fixed;
+            width:100vw;
+            height:100%;
+        h1 {
+            color:$black;
+            font-size:4vw;
+            padding-top:$line-global;
+            margin-left:$line-global*2;
+            font-style:italic;
+            }
+    
+        .prev,
+        .next {
+            color:$black;
+            font-family: $header-font;
+            font-size:3vw;
+        }
+    
+    
+        .next {
+            position:absolute;
+            right:$line-global*2;
+            bottom:$line-global;
+        }
+        .prev {
+            position:absolute;
+            left:$line-global*2;
+            bottom:$line-global;
+        }
+
+        .steps {
+            width:100vw;
+            font-family:$body-font;
+            font-size:3vw;
+            position: absolute;
+            bottom:$line-global;
+    display:flex;
+justify-content: center;        }
+    }
+
+    .look-grid {
+        height:100%;
+        display:grid;
+        grid-template-columns: repeat(12 , 1fr);
+        grid-template-rows:  repeat(12, 1fr);
+        grid-row-gap:$line-global;
+
+        grid-column-gap:$line-global;
+        margin-left:$line-global*2;
+        margin-right:$line-global*2;
+        .image-1 {
+
+            grid-column: 2 / span 4;
+            grid-row: 3 / span 7;
+            width:100%;
+            img {
+                width:100%;
+            }
+        }
+
+        .image-2 {
+                grid-column: 8 / span 4;
+                grid-row: 2 / span 8 ;
+                align-items: center;
+                width:100%;
+                img {
+                    width:100%;
+                }
+            }
+        }
+
+    }
+

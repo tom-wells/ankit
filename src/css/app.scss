@@ -15,7 +15,7 @@ $line-height-header: 1.4;
 $line-height-body: 1.6;
 
 $header-size:72px;
-$sub-header-size:36px;
+$sub-header-size:64px;
 $body-size:18px;
 
 
@@ -24,15 +24,19 @@ body, h1,h2,h3, p ,a {
     margin:0;
 
 }
-body {
+section {
+    width:100vw;
+    height:100%;
     background-color:$background;
+
+}
+body {
     position:relative;
 }
 
 a, p {
     text-decoration:none;
     font-family: $body-font;
-    color:$white;
 }
 
 h1 {
@@ -41,6 +45,22 @@ h1 {
         font-style:italic;
         font-weight:800;
         color:$white;
+}
+
+h2 {
+    font-family:$header-font;
+    font-size:$sub-header-size;
+    font-style:italic;
+    font-weight:800;
+    color:$white;
+}
+
+h3 {
+    font-family:$header-font;
+    font-size:24px;
+    font-style:italic;
+    font-weight:800;
+    color:$white;
 }
 
 header {
@@ -60,14 +80,16 @@ header {
 
 
 .menu-button {
+
     top:$line-global*2;
     right:$line-global*2;
     position:fixed;
-    color:$white;
     font-weight:800;
+    font-family: $body-font;
     z-index:3;
     cursor: pointer;
-
+    color:$white;
+    
 }
 
 .menu {
@@ -78,10 +100,12 @@ header {
     transform:translateY(-100%);
     transition: 1s ease-in-out;
     z-index:3;
+   
 }
 
 .open {
     transform: translateY(0%);
+    
 }
 
 nav {
@@ -93,6 +117,7 @@ nav {
     flex-direction: column;
     height:100vh;
         a {
+        color:$white;
         display:block;
         margin-bottom:15px;
         font-family:$header-font;
@@ -114,6 +139,8 @@ nav {
         position: absolute;
         bottom:$line-global*2;
         left:$line-global*2;
+                    color:$white;
+
         a {
             font-family:$body-font;
             font-size:$body-size;
@@ -374,8 +401,82 @@ padding:$line-global*4 0;
     }
 
 
+    .visit {
+        width:100vw;
+        height:100vh;
+        justify-content: center;
+        align-items:center;
 
 
+        .map {
+          width:350px;
+          height:350px;
+          margin-top:60px;
+          padding:$line-global;
+          border: 5px solid $white;
+
+          
+          iframe {
+              width:100%;
+              height:100%;
+
+          }
+        }
+        
+        .grid {
+            margin-left:$line-global*2;
+            display:grid;
+            grid-template-columns: 250px 160px;
+            grid-template-rows: 200px 160px 100px;
+            padding-top: 60px;
+
+
+            .find-us-text {
+                grid-column: 1 / span 2;
+
+                
+                p { color:$black;
+                    margin-top:$line-global/2;
+                }
+            }
+
+            .address {
+                h3 {
+                    margin-bottom:$line-global;
+                }
+                grid-row:2 / span 2;
+                p { line-height: 2.3;
+                    color:$black;
+                }
+            }
+
+            .opening-times {
+                h3 {
+                    margin-bottom:$line-global;
+                }
+             p {
+                line-height: 2.3;
+                color:$black;
+
+               }
+            }
+            .phone  {
+                align-items:baseline;
+                h3 {
+                    margin-bottom:$line-global;
+                }
+                p {
+                line-height: 2.3;
+                color:$black;
+
+            }
+        
+        }
+    }
+
+
+
+}
 
 
 
@@ -498,7 +599,30 @@ padding:$line-global*4 0;
 }
 }
 
+// visit us page 
+.visit-heading {
+    font-size:6vw;
+
 }
+    .visit {
+        height:100%;
+        width:100vw;
+    .map {
+        margin-bottom:$line-global*2;
+    }
+        .grid {
+            padding-top: 175px;
+            margin-left: auto;
+    margin-right: auto;
+    padding-left:$line-global;
+    padding-right:$line-global;
+
+        }
+    }
+
+}
+
+
 
 
 
@@ -509,7 +633,44 @@ padding:$line-global*4 0;
 
     @media (max-width:550px) {
 
+    .visit-heading {
+        left:$line-global;
+    }
 
+    .visit {
+        .map {
+            width:250px;
+            height:250px;
+        }
+        .grid {
+            display:block;
+            text-align:center;
+            .find-us-text {
+                h2 {
+                    font-size:13vw;
+                }
+            }
+
+            .address {
+                h3 {
+                    margin-top:$line-global*2;
+                }
+            }
+
+            .opening-times {
+                h3 {
+                    margin-top:$line-global*2;
+                }
+            }
+            .phone  {
+                h3 {
+                    margin-top:$line-global*2;
+                }
+        
+        }
+    }
+        
+    }
         .container {
 
             .about-text {
