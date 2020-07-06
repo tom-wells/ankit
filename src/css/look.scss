@@ -28,8 +28,8 @@ $background-10: #F5F9FD;
 
 
 
-
-.holder {
+.carousel-1,
+.carousel-2 {
     background-color:$background-1;
     transition: background ease 1s;
     width:100vw;
@@ -135,7 +135,6 @@ justify-content: center;        }
     
     
             .image-3 {
-                background-image: url("img/olive-2.jpg");
                 background-position: center;
                 background-size:cover;
                 grid-column: 3 / span 4;
@@ -149,6 +148,7 @@ justify-content: center;        }
             }
     
             .image-4 {
+                background-image: url("img/olive-2.jpg");
                     grid-column: 8 / span 4;
                     grid-row: 2 / span 7 ;
                     align-items: center;
